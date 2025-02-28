@@ -31,25 +31,43 @@ header {
 }
 
 nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     list-style: none;
-    text-align: center;
+    padding: 0 1rem;
 }
 
 nav li {
     display: inline;
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
 nav a {
+    color: var(--color-white);
     text-decoration: none;
     font-white: 700;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.carrinho {
+    width: 30px;
 }
 
 .hero {
     background-image: url("img/pexels-narda-yescas-1566837.jpg");
     background-size: cover;
     color: var(--color-white);
-    min-height: 75vh;
     padding: 10rem 0;
     text-align: center;
     min-heignt: 75vh;
@@ -76,6 +94,11 @@ nav a {
     margin-top: 1.5rem;
     padding: .75rem  1.5rem;
     text-decoration: none;
+    transition: background-color: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: darken(var(--color-primary), 10%);
 }
 
 section:not(#home) {
@@ -92,10 +115,6 @@ p {
     font-size 1.25rem;
 }
 
-.menu-list {
-    list-style: none;
-}
-    
 .menu-list > li {
     background-color: var(--color-light);
     border-radius: .5rem;
@@ -104,6 +123,7 @@ p {
     margin: 1.5rem;
     height: 22rem;
     width: 18rem;
+    overflow: hidden;
     text-align: left;
 }
     
