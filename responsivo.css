@@ -9,10 +9,11 @@
     }
 
     .menu-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 3fr;
     }
 
     #contact {
         padding: 2rem 1rem;
+        aligm-items: center;
     }
 }
